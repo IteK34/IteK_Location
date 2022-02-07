@@ -106,9 +106,9 @@ Citizen.CreateThread(function()
     Wait(20)
     end
     ped = CreatePed("PED_TYPE_CIVFEMALE", "g_m_m_korboss_01", -283.4137, -888.6544, 30.0806, 79.9023, false, true)
-    SetBlockingOfNonTemporaryEvents(ped, config.freezeped)
-    FreezeEntityPosition(ped, config.peurped)
-    SetEntityInvincible(ped, config.invincibleped)
+    SetBlockingOfNonTemporaryEvents(ped, 1)
+    FreezeEntityPosition(ped, 1)
+    SetEntityInvincible(ped, 1)
 end)
 
 voiture.Closed = function() end
