@@ -10,9 +10,4 @@ config.blipcolour = 50
 config.blipsprite = 162
 config.blipdisplay = 4
 
-
-config.peurped = true
-config.freezeped = true
-config.invincibleped = true
-
 Config = { position = { {x = -283.41, 	y = -888.65, 	z = 31.08} } }
