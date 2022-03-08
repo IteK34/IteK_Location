@@ -10,4 +10,4 @@ config.blipcolour = 50
 config.blipsprite = 162
 config.blipdisplay = 4
 
-Config = { position = { {x = -283.41, 	y = -888.65, 	z = 31.08} } }
+Config = { position = vector3(-283.41, -888.65, 31.08) }

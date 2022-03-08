@@ -68,7 +68,7 @@ Citizen.CreateThread(function()
       local wait = 900
         for k,v in pairs(Config.position) do
             local plyCoords = GetEntityCoords(GetPlayerPed(-1), false)
-            local dist = Vdist(plyCoords.x, plyCoords.y, plyCoords.z, v.x, v.y, v.z)
+            local dist = #(plyCoords - v)
             if dist <= 1.8 then
                 wait = 1
                 ESX.ShowHelpNotification("Appuyez sur ~INPUT_CONTEXT~ pour louer un véhicule !")
