@@ -1,17 +1,8 @@
-config = {}
-
-config.prixvoiture1 = "~g~250¥"
-config.prixvoiture2 = "~g~125¥"
-config.prixmoto1 = "~g~25¥"
-
-config.blipname = "Location"
-config.blipscale = 0.8
-config.blipcolour = 50
-config.blipsprite = 162
-config.blipdisplay = 4
-
 Config = {
     position = vector3(-283.41, -888.65, 31.08),
+    moneyLabel = "~g~%s¥" -- For example, it will display for a vehicle that cost 100$ -> 100¥ (with a green color)
+
+    -- Vehicles config
     asbo = {
         price = 250,
         hash = `asbo`,
@@ -26,5 +17,12 @@ Config = {
         price = 25,
         hash = `bmx`,
         spawn = vector4(-285.7448, -887.2358, 31.0806, 171.4600)
-    }
+    },
+
+    -- Blip config
+    blipname = "Location",
+    blipscale = 0.8,
+    blipcolour = 50,
+    blipsprite = 162,
+    blipdisplay = 4
 }

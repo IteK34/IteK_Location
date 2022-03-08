@@ -34,14 +34,14 @@ function location()
                 end)
 
                 RageUI.IsVisible(voiture, function()
-                    RageUI.Button("Asbo", nil, {RightLabel = config.prixvoiture1}, true, {
+                    RageUI.Button("Asbo", nil, {RightLabel = Config.moneyLabel:format(Config["asbo"].price)}, true, {
                         onSelected = function()
                             TriggerServerEvent('IteK:achat', "asbo")
                             RageUI.CloseAll()
                             open = false
                         end
                     })
-                    RageUI.Button("Club", nil, {RightLabel = config.prixvoiture2}, true, {
+                    RageUI.Button("Club", nil, {RightLabel = Config.moneyLabel:format(Config["club"].price)}, true, {
                         onSelected = function()
                             TriggerServerEvent('IteK:achat', "club")
                             RageUI.CloseAll()
@@ -51,7 +51,7 @@ function location()
                 end)
 
                 RageUI.IsVisible(moto, function()
-                    RageUI.Button("BMX", nil, {RightLabel = config.prixmoto1}, true, {
+                    RageUI.Button("BMX", nil, {RightLabel = Config.moneyLabel:format(Config["bmx"].price)}, true, {
                         onSelected = function()
                             TriggerServerEvent('IteK:achat', "bmx")
                             RageUI.CloseAll()
