@@ -103,12 +103,12 @@ end)
 
 -- PED
 CreateThread(function()
-    local hash = GetHashKey("g_m_m_korboss_01")
+    local hash = `g_m_m_korboss_01`
     while not HasModelLoaded(hash) do
         RequestModel(hash)
         Wait(20)
     end
-    local ped = CreatePed("PED_TYPE_CIVFEMALE", "g_m_m_korboss_01", -283.4137, -888.6544, 30.0806, 79.9023, false, true)
+    local ped = CreatePed("PED_TYPE_CIVFEMALE", hash, -283.4137, -888.6544, 30.0806, 79.9023, false, true)
     SetBlockingOfNonTemporaryEvents(ped, 1)
     FreezeEntityPosition(ped, 1)
     SetEntityInvincible(ped, 1)

@@ -10,7 +10,7 @@ AddEventHandler('IteK:achatAsbo', function()
 
     if money >= prix then
         xPlayer.removeMoney(price)
-        SetVehicleNumberPlateText(CreateVehicle(GetHashKey("asbo"), -309.3480, -897.6269, 31.0806, 347.9820, true, false), "LOCATION")
+        SetVehicleNumberPlateText(CreateVehicle(`asbo`, -309.3480, -897.6269, 31.0806, 347.9820, true, false), "LOCATION")
         TriggerClientEvent('esx:showNotification', _source, "Achat effectué !")
     else
         TriggerClientEvent('esx:showNotification', _source, "Vous n'avez pas assez d\'argent")
@@ -26,7 +26,7 @@ AddEventHandler('IteK:achatClub', function()
 
     if money >= price then
         xPlayer.removeMoney(price)
-        SetVehicleNumberPlateText(CreateVehicle(GetHashKey("club"), -312.9246, -896.8875, 31.0752, 347.5302, true, false), "LOCATION")
+        SetVehicleNumberPlateText(CreateVehicle(`club`, -312.9246, -896.8875, 31.0752, 347.5302, true, false), "LOCATION")
         TriggerClientEvent('esx:showNotification', _source, "Achat effectué !")
     else
         TriggerClientEvent('esx:showNotification', _source, "Vous n'avez pas assez d\'argent")
@@ -42,7 +42,7 @@ AddEventHandler('IteK:achatBMX', function()
 
     if money >= price then
         xPlayer.removeMoney(price)
-        SetVehicleNumberPlateText(CreateVehicle(GetHashKey("bmx"), -285.7448, -887.2358, 31.0806, 171.4600, true, false), "LOCATION")
+        SetVehicleNumberPlateText(CreateVehicle(`bmx`, -285.7448, -887.2358, 31.0806, 171.4600, true, false), "LOCATION")
         TriggerClientEvent('esx:showNotification', _source, "Achat effectué !")
     else
         TriggerClientEvent('esx:showNotification', _source, "Vous n'avez pas assez d\'argent")
